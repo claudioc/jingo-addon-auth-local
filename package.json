@@ -1,5 +1,5 @@
 {
-  "name": "jingo-auth-local",
+  "name": "jingo-addon-auth-local",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
