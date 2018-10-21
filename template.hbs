@@ -1,0 +1,27 @@
+<h2>Sign-in</h2>
+<h4>with username and password</h4>
+{{#if errors}}
+  <ul class="errors">
+  {{#each errors}}
+    <li>{{this}}</li>
+  {{/each}}
+  </ul>
+{{/if}}
+
+<section class="j-auth j-auth-local">
+  <form method="post">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <div class="form-item">
+      <label>Username <span class="req">*</span></label>
+      <input autofocus type="text" name="username" required>
+    </div>
+    <div class="form-item">
+      <label>Password <span class="req">*</span></label>
+      <input type="password" name="password" required>
+    </div>
+    <div class="form-item form-buttons">
+      <input type="submit" class="button primary" value="Login">
+      <a class="button outline j-last" href="/">Cancel</a>
+    </div>
+  </form>
+</section>
